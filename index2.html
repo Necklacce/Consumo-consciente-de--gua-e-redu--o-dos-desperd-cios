@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigações</title>
+    <link rel="stylesheet" type="text/css" href="styles/creditos.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <h1>Água</h1>
+            <h1>Água</h1>
+        </div>
+        <ul>
+            <li class="glow-list-item"><a href="index.html" class="glow-button">Home</a></li>
+            <li class="glow-list-item"><a href="index2.html" class="glow-button">Créditos</a></li>
+            <li class="glow-list-item"><a href="fontes.html" class="glow-button">Fontes</a></li>
+        </ul>
+    </header>
+    <div class="primeiro">
+        <div class="logo2">
+            <h1 id="agua2">Água</h1>
+            <h1 id="agua2">Água</h1>
+        </div>
+        <h2>Site criado por Nicollas R. Santos Cruz</h2>
+        <h2 id="insta">@nicollas.crz</h2>
+    </div>
+    <section id="sobre">
+
+            <article class="baixo">
+                <h2></h2>
+                <h1></h1>
+                <p></p>
+            </article>
+    </section>
+
+    <section class="servicos">
+        <h1 id="pesquisa">Pesquisas</h1>
+        <article class="baixo">
+            <h2>Luísa<br>Carla<br>Iasmin<br>Pedro</nr></h2>
+        </article>   
+    </section>
+    <footer>
+        <p>Todos direitos reservados</p>
+        <p>&copy; Copyright Nicollas Cruz</p>
+    </footer>
+    <script>
+        window.addEventListener("scroll", () => {
+
+        document.querySelectorAll(".esquerda").forEach((animacao, index) => {
+            if(animacao.getBoundingClientRect().top < window.innerHeight - 50){
+
+                animacao.classList.add("efeitoScroll")
+
+            }
+        })
+
+        document.querySelectorAll(".direita").forEach((animacao, index) => {
+            if(animacao.getBoundingClientRect().top < window.innerHeight - 50){
+
+                animacao.classList.add("efeitoScroll")
+
+            }
+        })
+
+        document.querySelectorAll(".baixo").forEach((animacao, index) => {
+            if(animacao.getBoundingClientRect().top < window.innerHeight - 250){
+
+                animacao.classList.add("efeitoScroll")
+
+            }
+        })
+
+
+        })
+    </script>
+</body>
+</html>

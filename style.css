@@ -400,6 +400,12 @@ background: linear-gradient(180deg, rgba(2,0,36,0) 70%, rgba(203,190,159,0.9) 10
     right: 25%;
     z-index: 100;
 }
+.prev{
+    z-index: 1;
+}
+.next{
+    z-index: 1;
+}
 .arrows button{
     background-color: rgba(0, 0, 0, 0.651);
     border: none;

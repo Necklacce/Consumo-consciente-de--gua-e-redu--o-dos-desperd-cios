@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    overflow-x:hidden;
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+header{
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+ul{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    padding: 30px;
+    padding-right: 100px;
+    top: 15px;
+    right: 100px;
+    z-index: 3;
+}
+.glow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+/* Efeito de brilho ao passar o mouse */
+.glow-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 10px #3498db;
+}
+.logo h1{
+    position: absolute;
+    font-size: 50px ;
+    top: 10px;
+    left: 30px;  
+}
+.logo h1:nth-child(1)
+{
+    color:transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+
+}
+.logo h1:nth-child(2)
+{
+    color:#03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+
+        clip-path: polygon(0 47%, 11% 43%, 22% 42%, 31% 45%, 40% 50%, 48% 56%, 57% 61%, 68% 64%, 78% 63%, 86% 58%, 94% 55%, 100% 51%, 100% 100%, 0 100%);
+
+    }
+    50%{
+
+        clip-path: polygon(0 65%, 11% 70%, 23% 71%, 33% 67%, 41% 61%, 50% 55%, 61% 47%, 71% 43%, 81% 41%, 92% 42%, 96% 45%, 100% 50%, 100% 100%, 0 100%);
+
+    }
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 200px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site h1 span{
+    color: #2980b9;
+}
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+.topo-do-site .txt-topo-site p span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    max-width:700px;
+    max-height:900px;
+    width: 450px;   
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+section.segundo-topico{
+    position: absolute;
+    top: 570px;
+    padding: 0px 14%;
+    max-height: 700px;
+}
+section.segundo-topico .segundo-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.segundo-topico h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.segundo-topico h1 span{
+    color: #2980b9;
+}
+.segundo-topico .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+.segundo-topico .txt-topo-site p span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.segundo-topico .segunda-img img{
+    position: relative;
+    max-width:700px;
+    max-height:900px;
+    width: 450px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+/* ESTILO DO TOPO DO SITE */
+section.site-três{
+    padding: 100px 15%;
+    max-width: 100%;
+}
+section.site-três .flex-três{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+.site-três h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.site-três h1 span{
+    color: #2980b9;
+}
+.site-três .txt-site-três p{
+    color: white;
+    margin: 40px 10;
+}
+.site-três .txt-site-três p span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.site-três .img-site-três img{
+    position: relative;
+    max-width:700px;
+    max-height:900px;
+    width: 450px;
+    float: right;
+    left: 50px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+section.quarto-topico{
+    position: absolute;
+    top: 1400px;
+    padding: 0px 14%;
+    max-height: 700px;
+}
+section.quarto-topico .quarto-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.quarto-topico h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.quarto-topico h1 span{
+    color: #2980b9;
+}
+.quarto-topico .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+.quarto-topico .txt-topo-site p span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.quarto-topico .quarto-img img{
+    position: relative;
+    max-width:700px;
+    max-height:900px;
+    width: 450px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
